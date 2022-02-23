@@ -1,0 +1,7 @@
+{
+    "path":"E:\\Program\\Anaconda\\envs\\mask1",
+    "cmd":["D:/Users/qian9/AppData/Local/Programs/Python/Python310/python.exe","-u","$file"],
+     "file_regex":"^[]*File \"(...*?\",line([0-9]*)",
+      "selector":"source.python",
+    "encoding":"cp936"
+}
