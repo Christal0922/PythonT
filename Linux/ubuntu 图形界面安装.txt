@@ -1,0 +1,30 @@
+sudo vi /etc/resolv.conf
+nameserver 10.10.0.21
+nameserver 10.10.2.21
+
+sudo apt-get install tasksel -y
+sudo tasksel install ubuntu-desktop
+
+reboot
+sudo service gdm3 start
+
+sudo apt-get remove ubuntu-desktop
+
+gnome桌面优化工具安装
+sudo apt install gnome-tweak-tool
+sudo apt install chrome-gnome-shell
+可以在Gnome中使用Ctrl+Alt+[F1,F2,F3,F4,F5,F6]切换到命令行，在命令行端使用Alt+F7可以切换到Gnome界面了。
+
+
+
+sudo apt-get install ubuntu-desktop unity compizconfig-settings-manager
+export  DISPLAY=localhost:0
+#执行下面这条命令之前，确保你上一步的XLaunch是开着的并且配置好了
+ccsm
+
+export DISPLAY=localhost:0
+sudo compiz
+
+为了方便后续使用，可以在桌面上生成一个快捷方式，以E盘为例，打开terminal输入：
+# sudo ln -sT [文件夹路径] [桌面文件夹路径]
+sudo ln -sT /mnt/e /home/usrName/Desktop/E #usrName换成你的用户名
